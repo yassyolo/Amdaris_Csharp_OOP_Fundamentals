@@ -1,11 +1,8 @@
 ﻿using AmdarisEshop.Application.Abstract;
-using AmdarisEshop.Infrastructure;
 using AmdarisEshop.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AmdarisEshop.Infrastructure.Repository
@@ -51,7 +48,7 @@ namespace AmdarisEshop.Infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Update(Product product)
+        public void Update(Product product)
         {
             _context.Update(product);
         }

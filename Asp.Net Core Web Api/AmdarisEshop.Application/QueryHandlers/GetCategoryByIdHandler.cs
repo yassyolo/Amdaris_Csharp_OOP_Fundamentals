@@ -10,6 +10,7 @@ namespace AmdarisEshop.Application.QueryHandlers
     public class GetCategoryByIdHandler : IRequestHandler<GetCategoryById, Category>
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public GetCategoryByIdHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

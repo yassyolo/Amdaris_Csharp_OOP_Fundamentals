@@ -1,8 +1,5 @@
 ﻿using AmdarisEshop.Application.Abstract;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AmdarisEshop.Infrastructure
@@ -10,18 +7,19 @@ namespace AmdarisEshop.Infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly DataContext _dataContext;
-        public UnitOfWork(DataContext dataCOntext, IProductRepository productRepository,
-            ICategoryReporitory categoryRepository)
+
+        public UnitOfWork(
+            DataContext dataContext,
+            IProductRepository productRepository,
+            ICategoryRepository categoryRepository)
         {
-            _dataContext = dataCOntext;
+            _dataContext = dataContext;
             ProductRepository = productRepository;
             CategoryRepository = categoryRepository;
         }
 
         public IProductRepository ProductRepository { get; private set; }
-        public ICategoryReporitory CategoryRepository { get; private set; }
-
-        
+        public ICategoryRepository CategoryRepository { get; private set; }
 
         public async Task Save()
         {
@@ -30,7 +28,16 @@ namespace AmdarisEshop.Infrastructure
 
         public void Dispose()
         {
-            _dataContext.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _dataContext.Dispose();
+            }
         }
     }
 }

@@ -16,10 +16,7 @@ namespace AmdarisEshop.Presentation.Controllers
         public readonly IMapper _mapper;
         public readonly IMediator _mediator;
 
-        private readonly MySettingsSection _settings;
-
-        public CategoriesController(IMapper mapper, IMediator mediator,
-            IOptions<MySettingsSection> options)
+        public CategoriesController(IMapper mapper, IMediator mediator)
         {
             _mediator = mediator;
             _mapper = mapper;
@@ -44,7 +41,7 @@ namespace AmdarisEshop.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCategories()
+        public async Task<ActionResult<IEnumerable<CategoryGetDto>>> GetCategories()
         {
             var result = await _mediator.Send(new GetAllCategories());
             var mappedResult = _mapper.Map<List<CategoryGetDto>>(result); 

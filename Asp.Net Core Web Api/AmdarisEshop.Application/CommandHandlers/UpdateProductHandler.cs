@@ -10,6 +10,7 @@ namespace AmdarisEshop.Application.CommandHandlers
     public class UpdateProductHandler : IRequestHandler<UpdateProduct, Product>
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public UpdateProductHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
@@ -22,11 +23,11 @@ namespace AmdarisEshop.Application.CommandHandlers
                 AvailableQuantity = request.Quantity,
                 Price = request.Price,
                 ProductName = request.Name,
-                ProdcutDescription = request.Description,
+                ProductDescription = request.Description,
                 ProductId = request.ProductId,
             };
 
-            await _unitOfWork.ProductRepository.Update(toUpdate);
+            _unitOfWork.ProductRepository.Update(toUpdate);
 
             await _unitOfWork.Save();
 

@@ -2,7 +2,6 @@
 using AmdarisEshop.Application.Commands;
 using AmdarisEshop.Domain.Models;
 using MediatR;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -22,7 +21,7 @@ namespace AmdarisEshop.Application.CommandHandlers
             {
                 AvailableQuantity = request.AvailableQuantity,
                 ProductName = request.ProductName,
-                ProdcutDescription = request.ProdcutDescription,
+                ProductDescription = request.ProductDescription,
                 Price = request.Price,
             };
 

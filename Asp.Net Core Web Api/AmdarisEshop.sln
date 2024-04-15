@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmdarisEshop.Application", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmdarisEshop.Infrastructure", "AmdarisEshop.Infrastructure\AmdarisEshop.Infrastructure.csproj", "{6B97DC1F-5C4E-4348-BF20-0143E40E3D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmdarisEshop.Presentation", "AmdarisEshop.Presentation\AmdarisEshop.Presentation.csproj", "{F3D0E1CE-7941-4765-A5F0-EC26581CB20D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmdarisEshop.Presentation", "AmdarisEshop.Presentation\AmdarisEshop.Presentation.csproj", "{F3D0E1CE-7941-4765-A5F0-EC26581CB20D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmdarisEshop.UnitTests", "AmdarisEshop.UnitTests\AmdarisEshop.UnitTests.csproj", "{57FBF9A2-6253-4405-A39C-A512C965A4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmdarisEshop.IntegrationTests", "AmdarisEshop.IntegrationTests\AmdarisEshop.IntegrationTests.csproj", "{5E5E30BC-85BF-43AE-9C8E-96660D64BB68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{F3D0E1CE-7941-4765-A5F0-EC26581CB20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3D0E1CE-7941-4765-A5F0-EC26581CB20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3D0E1CE-7941-4765-A5F0-EC26581CB20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FBF9A2-6253-4405-A39C-A512C965A4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FBF9A2-6253-4405-A39C-A512C965A4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FBF9A2-6253-4405-A39C-A512C965A4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FBF9A2-6253-4405-A39C-A512C965A4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5E30BC-85BF-43AE-9C8E-96660D64BB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5E30BC-85BF-43AE-9C8E-96660D64BB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5E30BC-85BF-43AE-9C8E-96660D64BB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5E30BC-85BF-43AE-9C8E-96660D64BB68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

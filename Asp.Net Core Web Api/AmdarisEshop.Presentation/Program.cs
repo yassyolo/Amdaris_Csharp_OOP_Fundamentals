@@ -24,12 +24,12 @@ builder.Services.AddTransient<ITransientService, TransientService>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<ICategoryReporitory, CategoryRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddMediatR(typeof(CreateProduct));
-builder.Services.AddAutoMapper(typeof(AssemblyMarketPresentatio));
+builder.Services.AddAutoMapper(typeof(AssemblyMarketPresentation));
 
 builder.Services.Configure<MySettingsSection>(
     builder.Configuration.GetSection(

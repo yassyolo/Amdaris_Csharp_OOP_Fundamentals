@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AmdarisEshop.Application.Abstract
@@ -9,7 +6,7 @@ namespace AmdarisEshop.Application.Abstract
     public interface IUnitOfWork : IDisposable
     {
         public IProductRepository ProductRepository { get; }
-        public ICategoryReporitory CategoryRepository { get; }
+        public ICategoryRepository CategoryRepository { get; }
         Task Save();
     }
 }

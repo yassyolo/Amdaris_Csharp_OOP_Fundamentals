@@ -11,6 +11,7 @@ namespace AmdarisEshop.Application.QueryHandlers
     public class GetAllCategoriesHandler : IRequestHandler<GetAllCategories, List<Category>>
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public GetAllCategoriesHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

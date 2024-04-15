@@ -13,6 +13,6 @@ namespace AmdarisEshop.Application.Abstract
         void Remove(Product product);
         Task<List<Product>> GetAll();
 
-        Task Update(Product product);
+        void Update(Product product);
     }
 }

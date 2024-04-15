@@ -10,6 +10,7 @@ namespace AmdarisEshop.Application.CommandHandlers
     public class DeleteCategoryHandler : IRequestHandler<DeleteCategory, Category>
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public DeleteCategoryHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

@@ -2,7 +2,6 @@
 using AmdarisEshop.Application.Commands;
 using AmdarisEshop.Domain.Models;
 using MediatR;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,6 +10,7 @@ namespace AmdarisEshop.Application.CommandHandlers
     public class AddCategoryToProductHandler : IRequestHandler<AddCategoryToProduct, Product>
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public AddCategoryToProductHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

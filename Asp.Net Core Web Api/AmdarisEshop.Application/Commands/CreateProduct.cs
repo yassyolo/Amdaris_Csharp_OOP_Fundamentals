@@ -11,7 +11,7 @@ namespace AmdarisEshop.Application.Commands
     public class CreateProduct : IRequest<Product>
     {
         public string ProductName { get; set; }
-        public string ProdcutDescription { get; set; }
+        public string ProductDescription { get; set; }
         public int AvailableQuantity { get; set; }
         public double Price { get; set; }
     }

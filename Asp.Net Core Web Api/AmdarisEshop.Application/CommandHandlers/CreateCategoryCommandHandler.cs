@@ -10,6 +10,7 @@ namespace AmdarisEshop.Application.CommandHandlers
     public class CreateCategoryCommandHandler : IRequestHandler<CreateCategory, Category>
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public CreateCategoryCommandHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

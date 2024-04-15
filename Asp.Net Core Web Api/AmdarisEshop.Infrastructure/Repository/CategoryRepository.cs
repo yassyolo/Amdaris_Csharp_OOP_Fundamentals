@@ -1,16 +1,13 @@
 ﻿using AmdarisEshop.Application.Abstract;
-using AmdarisEshop.Infrastructure;
 using AmdarisEshop.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AmdarisEshop.Infrastructure.Repository
 {
-    public class CategoryRepository : ICategoryReporitory
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly DataContext _context;
 
@@ -49,11 +46,9 @@ namespace AmdarisEshop.Infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task Update(Category category)
+        public void Update(Category category)
         {
             _context.Update(category);
         }
-
-       
     }
 }
