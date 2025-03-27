@@ -47,24 +47,24 @@ namespace Assessment3
 
         private class AnimalEnumerator : IEnumerator<Animal>
         {
-            private List<Animal> animals;
-            private int currentIndex;
+            private List<Animal> _animals;
+            private int _currentIndex;
 
             public AnimalEnumerator(List<Animal> animals)
             {
-                this.animals = animals;
-                currentIndex = -1;
+                _animals = animals;
+                _currentIndex = -1;
             }
 
             public Animal Current
             {
                 get
                 {
-                    if(currentIndex < 0 || currentIndex >= animals.Count)
+                    if(_currentIndex < 0 || _currentIndex >= _animals.Count)
                     {
                         throw new InvalidOperationException();
                     }
-                    return animals[currentIndex];
+                    return _animals[_currentIndex];
                 }
             }
 
@@ -76,15 +76,15 @@ namespace Assessment3
 
             public bool MoveNext()
             {
-                if(currentIndex < animals.Count - 1)
+                if(_currentIndex < _animals.Count - 1)
                 {
-                    currentIndex++;
+                    _currentIndex++;
                     return true;
                 }
                 return false;
             }
 
-            public void Reset() => currentIndex = -1;
+            public void Reset() => _currentIndex = -1;
             
         }
     }

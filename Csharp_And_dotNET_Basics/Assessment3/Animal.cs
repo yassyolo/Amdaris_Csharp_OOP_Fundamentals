@@ -2,44 +2,43 @@
 {
     public abstract class Animal : ICloneable
     {
-        private string name;
-        private string sponsor;
-        private string breed;
-        private int age;
+        private string _name;
+        private string _sponsor;
+        private string _breed;
+        private int _age;
 
         public string Name
         {
-            get { return name; }
+            get { return _name; }
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Name cannot be empty.");
                 }
-                name = value;
+                _name = value;
             }
         }
 
         public string Sponsor
         {
-            get { return sponsor; }
+            get { return _sponsor; }
             set
             {
                 if (value == null)
                 {
-                    Console.WriteLine("Sponsor is set to null.");
-                    sponsor = "None";
+                    _sponsor = "None";
                 }
                 else
                 {
-                    sponsor = value;
+                    _sponsor = value;
                 }                 
             }
         }
 
         public string Breed
         {
-            get { return breed; }
+            get { return _breed; }
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
@@ -47,7 +46,7 @@
                     throw new ArgumentException("Breed cannot be empty.");
                 }
                 
-                breed = value;
+                _breed = value;
             }
         }
 
@@ -66,14 +65,14 @@
 
         protected int Age
         {
-            get { return age; }
-            set
+            get { return _age; }
+            private set
             {
                 if (value < 0)
                 {
                     throw new ArgumentOutOfRangeException("Age cannot be negative.");
                 }
-                age = value;
+                _age = value;
             }
         }
 

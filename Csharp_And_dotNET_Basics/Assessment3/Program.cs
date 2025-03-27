@@ -28,4 +28,6 @@ Zoo clonedZoo = (Zoo)zoo.Clone();
 Console.WriteLine("Cloned Zoo Animals:");
 clonedZoo.DisplayAnimals();
 
+Console.ReadLine();
+
 
