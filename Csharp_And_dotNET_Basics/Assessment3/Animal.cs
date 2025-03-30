@@ -90,6 +90,23 @@
         {
             Console.WriteLine($"{Name} is eating.");
         }
+
         public abstract object Clone();
+
+        public override string ToString()
+        {
+            return $"Animal: {Name}, Age: {AgeCategory}, Breed: {Breed}, Sponsor: {Sponsor}";
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            Animal animal = (Animal)obj;
+            return Name == animal.Name && Breed == animal.Breed && Age == animal.Age;
+        }
     }
 }
