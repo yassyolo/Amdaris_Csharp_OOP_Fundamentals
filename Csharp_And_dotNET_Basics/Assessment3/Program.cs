@@ -14,7 +14,7 @@ zoo.AddAnimal(bear);
 Penguin penguin = new Penguin("Pingu", null, "Emperor", 1);
 zoo.AddAnimal(penguin);
 
-Console.WriteLine("Zoo Animals:");
+Console.WriteLine("Animals in the zoo before cloning:");
 zoo.DisplayAnimals();
 
 foreach (var animal in zoo)
@@ -23,10 +23,17 @@ foreach (var animal in zoo)
     animal.Eat();
 }
 
+penguin.Equals(tiger);
+penguin.Equals(bear);
+
 Zoo clonedZoo = (Zoo)zoo.Clone();
 
-Console.WriteLine("Cloned Zoo Animals:");
+Console.WriteLine("Animals in the zoo after cloning:");
 clonedZoo.DisplayAnimals();
+
+tiger.Purr();
+bear.Hibernate();
+penguin.Swim();
 
 Console.ReadLine();
 
