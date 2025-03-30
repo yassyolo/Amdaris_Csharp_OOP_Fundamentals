@@ -5,22 +5,22 @@ namespace Assessment3
 {
     public class Zoo : IEnumerable<Animal>, ICloneable
     {
-        private List<Animal> animals;
+        private List<Animal> _animals;
 
         public Zoo()
         {
-            animals = new List<Animal>();
+            _animals = new List<Animal>();
         }
 
         public void AddAnimal(Animal animal)
         {
-            animals.Add(animal);
+            _animals.Add(animal);
         }
 
         public object Clone()
         {
             Zoo clonedZoo = new Zoo();
-            foreach (var animal in animals)
+            foreach (var animal in _animals)
             {
                 clonedZoo.AddAnimal((Animal)animal.Clone());
             }
@@ -29,7 +29,7 @@ namespace Assessment3
 
         public IEnumerator<Animal> GetEnumerator()
         {
-            return new AnimalEnumerator(animals);
+            return new AnimalEnumerator(_animals);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -39,9 +39,9 @@ namespace Assessment3
 
         public void DisplayAnimals()
         {
-            foreach (var animal in animals)
+            foreach (var animal in _animals)
             {
-                Console.WriteLine($"Animal: {animal.Name}, Age: {animal.AgeCategory}, Breed: {animal.Breed}, Sponsor: {animal.Sponsor}");
+                Console.WriteLine(animal.ToString());
             }
         }
 
@@ -84,8 +84,7 @@ namespace Assessment3
                 return false;
             }
 
-            public void Reset() => _currentIndex = -1;
-            
+            public void Reset() => _currentIndex = -1;           
         }
     }
 }
