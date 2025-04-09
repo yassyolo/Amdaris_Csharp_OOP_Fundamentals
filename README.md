@@ -7,6 +7,7 @@ This repository contains my work and assessments for the Amdaris Fullstack .NET 
 - Assessment 1: Version Control and Git (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Version_Control_And_Git/Assesment1)
 - Assessment 3: C# and .Net Basics (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Csharp_And_dotNET_Basics/Assessment3)
 - Assessment 4: C# OOP Fundamentals (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Classes_In_Csharp/Assessment4)
+- Assessment 5: Strings (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Strings/Assessment5)
 - Assessment 6: Arrays Collections Generics (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Arrays_Collections_Generics/Assessment6)
 - Assessment 7: Debugging And Exception Handling(https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Debugging_And_Exception_Handling/Assessment7)
 - Assessment 8: Delegates And LINQ (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Delegates_And_LINQ/Assessment8)
