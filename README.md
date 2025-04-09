@@ -9,6 +9,7 @@ This repository contains my work and assessments for the Amdaris Fullstack .NET 
 - Assessment 4: C# OOP Fundamentals (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Classes_In_Csharp/Assessment4)
 - Assessment 6: Arrays Collections Generics (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Arrays_Collections_Generics/Assessment6)
 - Assessment 7: Debugging And Exception Handling(https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Debugging_And_Exception_Handling/Assessment7)
+- Assessment 8: Delegates And LINQ (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Delegates_And_LINQ/Assessment8)
 - Assessment 9: Advanced LINQ (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Advanced_LINQ/Assessment9)
 - Assessment 10: Disposal And Garbage Collection (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Disposal_And_Garbage_Collection/Assessment10)
 - Assessment 14: Creational Design Patterns (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Creational_Design_Patterns/Assessment14)
