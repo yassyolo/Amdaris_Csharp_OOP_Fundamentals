@@ -1,0 +1,47 @@
+@startuml MainFunctionalities
+
+actor Client
+
+rectangle "Profile dropdown" {
+  usecase "Switch to seller" as UC1
+  usecase "Profile" as UC2
+  usecase "See your reviews" as UC3
+  usecase "Add address, languages spoken, description, picture, full name, username, faq" as UC4
+  usecase "Update faq, profile picture" as UC5
+  usecase "Settings" as UC6
+  usecase "Change password and add and verify phone in security section" as UC7
+  usecase "Change username, fullname, email, address, description in account section" as UC8
+  usecase "Inbox section" as UC9
+  usecase "See your messages" as UC10
+  usecase "Check what type of notifications do you want to receive in notifications section" as UC11
+  usecase "browsing history section" as UC12
+  usecase "Clear it" as UC13
+  usecase "Billing section" as UC14
+  usecase "See and add billing info" as UC15
+  usecase "See and filter billing history" as UC16
+  usecase "Download pdf" as UC17
+  usecase "Logout" as UC18
+
+  
+    UC2 .down.> UC3 : <<include>>
+    UC2 .down.> UC4 : <<include>>
+    UC2 .down.> UC5 : <<include>>
+    UC6 .down.> UC7 : <<include>>
+    UC6 .down.> UC8 : <<include>>
+    UC6 .down.> UC11 : <<include>>
+    UC9 .down.> UC10 : <<include>>
+    UC12 .down.> UC13 : <<include>>
+    UC14 .down.> UC15 : <<include>>
+    UC14 .down.> UC16 : <<include>>
+    UC16 .down.> UC17 : <<include>>
+}
+
+Client --> UC1
+Client --> UC2
+Client --> UC6
+Client --> UC9
+Client --> UC12
+Client --> UC14
+Client --> UC18
+
+@enduml

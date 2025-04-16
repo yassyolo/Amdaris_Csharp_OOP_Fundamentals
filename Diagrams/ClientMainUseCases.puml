@@ -1,0 +1,20 @@
+@startuml MainFunctionalities
+
+actor Client
+
+rectangle "Main functionalities" {
+  usecase "Login with email/username and password" as UC1 
+  usecase "Login with Google OAuth" as UC1
+  usecase "Logout" as UC1
+  usecase "Sign up(email, password or Google OAuth)" as UC2
+  usecase "Get email verification" as UC2
+  
+    UC3 .down.> UC2 : <<include>>
+    UC2 .down.> UC3 : <<include>>
+}
+
+Client --> UC1
+Client --> UC2
+
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml MainFunctionalities
+
+actor Client
+
+rectangle "Categories" {
+  usecase "Search" as UC1
+  usecase "Click on main and choose from sub-sub category" as UC2
+  usecase "Filter gigs by special filters for each sub-sub category" as UC3
+  usecase "Choose sub-category and look at faqs for it" as UC4
+  usecase "Filter gigs by global filters for categories" as UC5
+  
+  UC1 .down.> UC3 : <<include>>
+}
+
+Client --> UC1
+Client --> UC2
+Client --> UC4
+Client --> UC5
+
+@enduml
