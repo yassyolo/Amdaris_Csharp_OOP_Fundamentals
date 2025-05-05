@@ -21,4 +21,5 @@ This repository contains my work and assessments for the Amdaris Fullstack .NET 
 
   #SQL and EF Core
   -Assessment 1: SQL Fundamentals (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/SQL_Fundamentals)
+  -Assessment 2: Reading Data (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Reading_Data)
 
