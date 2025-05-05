@@ -1,0 +1,120 @@
+ /TopNavbar
+    ├── DropdownIcon.jsx
+    ├── NavbarIcon.jsx
+    ├── Navbar.jsx
+
+      /Notifications
+        ├── NotificationDropdown.jsx
+        ├── NotificationItem.jsx
+        └── MarkAsReadButton.jsx
+      ├── SearchBar.jsx
+      ├── SearchBarIcon.jsx
+      ├── Logo.jsx
+      ├── OrdersButton.jsx
+      ├── ProfileIcon.jsx
+      └── ProfileDropdown.jsx
+
+Endpoints
+  ├── getBuyerUserProfile.js
+  ├── getNotificationsForUser.js
+  ├── markNotificationAsRead.js
+  ├── getConversationsForUser.js
+  ├── getConversationById.js
+  ├── getCoversationReceiverInfo.js
+  ├── searchGigByKeyword.js
+  └── getOrdersForBuyer.js
+
+Endpoint urls
+/user/get-buyer-user-profile
+/user/get-notifications-for-user
+/user/mark-notification-as-read
+/user/get-conversation-receiver-info
+/user/get-converations-for-user
+/user/get-conversation
+/gig/search-gig-by-keyword
+/user/get-orders-for-buyer
+
+
+
+/Categories
+  ├── MainCategoriesList.jsx
+  ├── MainCategoryItem.jsx
+  ├── MainCategoryDropdown.jsx
+  ├── MainCategoryDescription.jsx
+  ├── MostPopularSubCategoriesList.jsx
+  ├── SubCategoryWithSubSubCatgoriesList.jsx
+  ├── SubSubCatgoriesListItem.jsx
+  ├── MostPopularSubCategoryItem.jsx
+  ├── SubCategoriesList.jsx
+  ├── SubCategoryItem.jsx
+  └── SubSubCategoryItem.jsx
+
+Endpoints
+  ├── getMainCategories.js
+  ├── getSubCategoriesByMainCategory.js
+  ├── getMainCategoryDescriptionAndPhoto.js
+  └── getGigsBySubSubCategory.js
+
+
+/BrowsingHistory
+    ├── BrowsingHistory.jsx
+    └── ClearBrowsingHistoryButton.jsx
+
+Endpoints
+    ├── getBrowsingHistory.js
+    └── clearBrowsingHistory.js
+
+
+/GigCard
+    ├── GigCard.jsx
+    ├── GigCardImage.jsx
+    ├── GigCardRating.jsx
+    ├── GigCardPrice.jsx
+    ├── GigCardSeller.jsx
+    ├── GigSellerIsTopRated.jsx
+    └── GigCardDescription.jsx
+
+Endpoints
+    ├── getGigPhotos.js
+    ├── getSellerInfo.js
+    ├── getGigRating.js
+    ├── getGigPrice.js
+    └── getGigsByKeyword.js
+
+
+/FAQ
+    ├── FAQ.jsx
+    ├── FAQItem.jsx
+    └── FAQList.jsx
+
+Endpoints
+    ├── getFAQ.js
+    ├── getFAQByGig.js
+    ├── getFAQByUser.js
+    └── getFAQByMainCategory.js
+
+/Tags
+    ├── Tags.jsx
+    ├── TagsList.jsx
+    └── TagItem.jsx
+
+Endpoints
+    ├── getTagsByGig.js
+    ├── getTagsByUser.js
+    └── getTagsByMainCategory.js
+
+
+Authentication
+    ├── AuthenticationForm.jsx
+    ├── AuthenticationFormPhoto.jsx
+    ├── LoginForm.jsx
+    ├── RegisterForm.jsx
+    ├── BackButton.jsx
+    ├── VerifyEmail.jsx
+
+POST /auth/register
+POST /auth/login
+POST /auth/login/google
+POST /auth/login/google/callback
+GET /auth/check-email
+GET  /auth/verify?userId=...&token=...

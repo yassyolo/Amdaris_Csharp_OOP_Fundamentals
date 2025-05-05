@@ -21,7 +21,6 @@
         └── ProficiencyLevel.cs
         └── EducationDegree.cs
         └── SkillLevel.cs
-    └── ValueObjects/
   /Gigs
     └── Gig.cs
     └── GigMetadata.cs
@@ -71,11 +70,10 @@
     └── Enums/
         └── ProjectBriefStatus.cs
   /Shared
-    └── Interfaces/
+    └── Contracts/
+        └── IBaseEntity.cs
         └── ISoftDeletable.cs
-    └── BaseEvent.cs
     └── BaseEntity.cs
-    └── SoftDeletableEntity.cs
     └── Events
         └── Gig/
             └── GigCreatedEvent.cs
@@ -130,7 +128,7 @@
 
     └──Constants/
        └── EntityPropertyLength.cs
-       └── Roles.cs
+       └── UserRoles.cs
   
 
 
@@ -152,11 +150,11 @@
 │   │   ├── Abstractions/
 │   │   │  ├── ICommand.cs
 │   │   │  ├── IQuery.cs
-│   │   │  ├── ICachedQuery.cs
 │   │   │  ├── ICommandHandler.cs
 │   │   │  └── IQueryHandler.cs
 │   │   └── Services/
 │   │      ├── ICacheService.cs
+│   │      ├── INotificationService.cs
 │   │      ├── ICloudStorageService.cs
 │   │      ├── IEmailService.cs
 │   │      └── IChatService.cs
@@ -236,7 +234,12 @@
 │   └── CloudinaryService.cs
 │
 └── Realtime/
-    └── ChatService.cs
+    └── Services/
+        └── NotificationService.cs
+        └── ChatService.cs
+    └── Hubs/
+        └── NotificationHub.cs
+        └── ChatHub.cs
 
 
 
