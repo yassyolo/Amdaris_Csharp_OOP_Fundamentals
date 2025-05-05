@@ -20,4 +20,5 @@ This repository contains my work and assessments for the Amdaris Fullstack .NET 
 - Assessment 16: Structural Design Patterns (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/Structural_Design_Patterns/Assessment16)
 
   #SQL and EF Core
+  -Assessment 1: SQL Fundamentals (https://github.com/yassyolo/Amdaris_Csharp_OOP_Fundamentals/tree/master/SQL_Fundamentals)
 
